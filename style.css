@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+:root{
+    --fonte: 'Source Sans Pro', sans-serif;
+    --cor-fundo: #ff9900;
+    --cor-fonte: #FFF4CF;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: var(--fonte);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+}
+h2{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+.mensagem{
+    font-size: 1.25em;
+    margin-top: 20px
+}
+.box{
+    border: var(--cor-fonte) solid 2px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+.botao-recarregar{
+    background: var(--cor-fonte);
+    font-family: var(--fonte);
+    font-size: 2em;
+    margin-top: 1em;
+    border: 0;
+    border-radius: 12px;
+    padding: 8px 15px;
+}
+@media screen and (max-width:768px){
+    body{
+        margin: 0 5%;
+    }
+    h1{
+       font-size: 3em;
+    }
+    h2{
+       font-size: 2.5em;
+    }
+    h3{
+      font-size: 1.5em;
+    }
+    div{
+        font-size: 1em;
+    }
+    .box{
+        font-size: 3.5em;
+    }
+}
